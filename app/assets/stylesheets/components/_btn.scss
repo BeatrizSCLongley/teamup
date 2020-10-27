@@ -1,0 +1,27 @@
+// btn design
+.btn-blue {
+  color: var(--teamupBlue);
+  font-weight: bold;
+  padding: 10px 46px;
+  border: 4px solid var(--teamupBlue);
+  border-radius: 34px;
+}
+
+.btn-pink {
+  color: var(--teamupPink);
+  font-weight: bold;
+  padding: 10px 96px;
+  border: 4px solid var(--teamupPink);
+  border-radius: 34px;
+}
+
+// Home
+#home-banner-btn {
+  margin: 15px;
+}
+
+#home-intro-btn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
