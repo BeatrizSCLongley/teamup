@@ -1,7 +1,7 @@
 // HOME - BANNER
 #home-banner-container {
   width: 667px;
-  margin-left: 46px; // overrides container & positions it in the right place
+  margin-left: 46px; // overrides container & positions the content in the right place
 }
 
 #home-banner-text {
@@ -77,7 +77,7 @@
 // HOME - SOLUTIONS
 // background image
 #home-solutions {
-  height: 1000px;
+  height: 936px;
   position: relative; // parent needs to be relative
 
   // pseudo-element
@@ -85,7 +85,7 @@
     content: ''; // so the img shows up
     background-image: url(background_one.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     opacity: 0.1;
     position: absolute; // make it the same size as the parent
     top: 0px; // these 4 properties make it so the img doesn't colapse
@@ -122,7 +122,42 @@
   margin-bottom: 30px;
 }
 
-#home-solutions-img {
+#home-neuroselfie-img {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
+
+// ---------------------------
+// solutions grey section
+#home-solutions-gray {
+  background-color: rgb(242, 242, 242);
+  height: 1445px;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.title-color-green {
+  color: var(--teamupGreen);
+  margin-bottom: 30px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+// left solutions
+.home-sol-img-left {
+  display: flex;
+  justify-content: flex-end; // or center depending on taste + make it disappear in smaller screen
+  margin-top: 59px;
+}
+
+// right solution
+#home-sol-img-right {
+  display: flex;
+  justify-content: flex-start; // or center depending on taste + make it disappear in smaller screen
+  margin-top: 59px;
+}
+
+
+
