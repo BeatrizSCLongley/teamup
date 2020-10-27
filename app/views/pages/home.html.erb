@@ -17,19 +17,19 @@
     <div class="col-12 col-xl-6" id="home-intro-pic">
       <%= image_tag("reports.jpg", :alt => "reports", :id => "img-reports") %>
     </div>
-    <div class="col-12 col-xl-6" id="home-intro-text">
+    <div class="col-12 col-xl-6 home-text-right">
       <p class="subtitles-grey"><strong>teamup∞™ are proprietary neuroscience-based assessments</strong></p>
-      <h2>Based on neuroscience</h2>
+      <h2 id="title-color-pink">Based on neuroscience</h2>
       <p>The teamup∞™ model for high performing teams is based exclusively on application of the latest published neuroscience towards collaboration and collective intelligence.</p>
       <p>Workplaces are social systems, filled with people. Each and everyone of those people possesses a brain capable of amazing complexity, and more learning and adaptation than previously ever thought possible. Yet every one of those brains is wired to be beautifully and predictably biased, energy conserving, meaning making and risk avoiding. So it’s essential that we use this growing knowledge to create an environment where teams can flourish.</p>
       <p>We know that high performing teams give organizations a huge competitive advantage. However, these teams seldom perform to their collective potential. This is because most of the models of team effectiveness focus on competencies or experience, and ignore the science. This is where teamup∞™ is different...because we lead with neuroscience.</p>
     </div>
   </div>
-  <div id="home-intro-btn">
+  <div class="home-btn-middle">
     <%= link_to "the science", root_path, class: "btn-pink"%>
   </div>
   <div class="divider"></div>
-  <div id="home-quote">
+  <div class="home-text-middle">
     <p id="quote"><em>“Without data, you’re just another person with an opinion”</em></p>
     <p id="quote-author">(W. Edwards Deming)</p>
   </div>
@@ -37,12 +37,40 @@
 
 <div class="divider"></div>
 
-<div class="container" id="home-how">
-  <h2>How it works</h2>
-  <p>The teamup∞™ model for high performing teams suggests there are 6 ongoing leadership roles needed to build a high performing team. The model is an infinity loop to represent both the sequential and ongoing responsibility of leaders to create an effective team.</p>
-  <p>Our assessments help you to hone in on which of the 6 roles you do well, which you could improve upon, and what are some practical suggestions you can apply to your work today.</p>
-  <p>For those with a thirst for knowledge, we also provide specific information on how you’re doing on the 15 steps which sit at the heart of teamup∞™.</p>
-  <div id="home-how-img">
-    <%= image_tag("infinity_loop.jpg", :alt => "infinity loop model", :id => "img-infinity-loop") %>
+<!-- Temporary solution to background color div home-how-color -->
+<div id="home-how-color">
+  <div class="container" id="home-how">
+    <h2>How it works</h2>
+    <p>The teamup∞™ model for high performing teams suggests there are 6 ongoing leadership roles needed to build a high performing team. The model is an infinity loop to represent both the sequential and ongoing responsibility of leaders to create an effective team.</p>
+    <p>Our assessments help you to hone in on which of the 6 roles you do well, which you could improve upon, and what are some practical suggestions you can apply to your work today.</p>
+    <p>For those with a thirst for knowledge, we also provide specific information on how you’re doing on the 15 steps which sit at the heart of teamup∞™.</p>
+    <div id="home-how-img">
+      <%= image_tag("infinity_loop.jpg", :alt => "infinity loop model", :id => "img-infinity-loop") %>
+    </div>
+  </div>
+</div>
+
+<div id="home-solutions">
+  <div class="container" id="home-solutions-content">
+    <div id="home-solutions-title">
+      <h2>Our Solutions</h2>
+      <p class="subtitles-grey"><strong>We offer different leadership and team development solutions depending on your specific needs</strong></p>
+    </div>
+    <div class="row" id="home-sol-neuroselfie">
+      <div class="col-12 col-xl-6" id="home-solutions-img">
+        <%= image_tag("neuro_selfie.png", :alt => "neuro selfie report", :id => "img-report-ns") %>
+      </div>
+      <div class="col-12 col-xl-6 home-text-right">
+        <p class="subtitles-grey"><strong>Start with the individual</strong></p>
+        <h2 id="title-color-blue">neuro-selfie™</h2>
+        <p>The neuro-selfie™ is a one page snapshot based on the latest neuroscience, for where your strengths and weaknesses lie in leading a team to high performance. It takes just a couple of minutes to complete and is a quick yet impactful self-report assessment which will lead to a greater understanding of which actions you can take to become an even stronger team leader.</p>
+      </div>
+    </div>
+    <div class="home-text-middle">
+      <p class="subtitles-grey"><strong>Click here to book your neuro-selfie™, and start your journey towards becoming a better individual and team leader</strong></p>
+    </div>
+    <div class="home-btn-middle">
+      <%= link_to "book your neuro-selfie™", root_path, class: "btn-blue"%>
+    </div>
   </div>
 </div>

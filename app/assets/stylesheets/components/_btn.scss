@@ -7,6 +7,12 @@
   border-radius: 34px;
 }
 
+.btn-blue:hover {
+  color: white;
+  background-color: var(--teamupBlue);
+  text-decoration: none;
+}
+
 .btn-pink {
   color: var(--teamupPink);
   font-weight: bold;
@@ -15,12 +21,18 @@
   border-radius: 34px;
 }
 
+.btn-pink:hover {
+  color: white;
+  background-color: var(--teamupPink);
+  text-decoration: none;
+}
+
 // Home
 #home-banner-btn {
   margin: 15px;
 }
 
-#home-intro-btn {
+.home-btn-middle {
   margin-top: 40px;
   display: flex;
   justify-content: center;
