@@ -51,26 +51,85 @@
 </div>
 
 <div id="home-solutions">
-  <div class="container" id="home-solutions-content">
-    <div id="home-solutions-title">
-      <h2>Our Solutions</h2>
-      <p class="subtitles-grey"><strong>We offer different leadership and team development solutions depending on your specific needs</strong></p>
-    </div>
-    <div class="row" id="home-sol-neuroselfie">
-      <div class="col-12 col-xl-6" id="home-solutions-img">
-        <%= image_tag("neuro_selfie.png", :alt => "neuro selfie report", :id => "img-report-ns") %>
+  <div id="home-solutions-content">
+    <div class="container">
+      <div id="home-solutions-title">
+        <h2>Our Solutions</h2>
+        <p class="subtitles-grey"><strong>We offer different leadership and team development solutions depending on your specific needs</strong></p>
       </div>
-      <div class="col-12 col-xl-6 home-text-right">
-        <p class="subtitles-grey"><strong>Start with the individual</strong></p>
-        <h2 id="title-color-blue">neuro-selfie™</h2>
-        <p>The neuro-selfie™ is a one page snapshot based on the latest neuroscience, for where your strengths and weaknesses lie in leading a team to high performance. It takes just a couple of minutes to complete and is a quick yet impactful self-report assessment which will lead to a greater understanding of which actions you can take to become an even stronger team leader.</p>
+      <div class="row" id="home-sol-neuroselfie">
+        <div class="col-12 col-xl-6" id="home-neuroselfie-img">
+          <%= image_tag("neuro_selfie.png", :alt => "neuro selfie report", :id => "img-report-ns") %>
+        </div>
+        <div class="col-12 col-xl-6 home-text-right">
+          <p class="subtitles-grey"><strong>Start with the individual</strong></p>
+          <h2 id="title-color-blue">neuro-selfie™</h2>
+          <p>The neuro-selfie™ is a one page snapshot based on the latest neuroscience, for where your strengths and weaknesses lie in leading a team to high performance. It takes just a couple of minutes to complete and is a quick yet impactful self-report assessment which will lead to a greater understanding of which actions you can take to become an even stronger team leader.</p>
+        </div>
+      </div>
+      <div class="home-text-middle">
+        <p class="subtitles-grey"><strong>Click here to book your neuro-selfie™, and start your journey towards becoming a better individual and team leader</strong></p>
+      </div>
+      <div class="home-btn-middle">
+        <%= link_to "book your neuro-selfie™", root_path, class: "btn-blue"%>
       </div>
     </div>
-    <div class="home-text-middle">
-      <p class="subtitles-grey"><strong>Click here to book your neuro-selfie™, and start your journey towards becoming a better individual and team leader</strong></p>
-    </div>
-    <div class="home-btn-middle">
-      <%= link_to "book your neuro-selfie™", root_path, class: "btn-blue"%>
+
+    <div id="home-solutions-gray">
+      <div class="container">
+        <!-- TEAMUP 180 SOLUTION -->
+        <div class="row">
+          <div class="col-12 col-xl-6 margin-top-50 ">
+            <p class="subtitles-grey"><strong>Develop leaders</strong></p>
+            <h2 class="title-color-green">teamup∞™ 180</h2>
+            <p>Based on the teamup∞™ model for high performing teams, the teamup∞™ 180 assessment offers comprehensive, evidence-based feedback for where your greatest strengths/development areas are for driving high performance with your team.</p>
+            <p>It gathers self, team and line manager feedback and offers developmental advice in each dimension. The report includes the latest neuroscience behind each of the 6 roles, and also provides the barriers to effectiveness which you are demonstrating as an additional platform for your growth.</p>
+            <div class="margin-top-50">
+              <%= link_to "teamup∞™ 180 sample report", root_path, class: "btn-green"%>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 home-sol-img-left">
+            <%= image_tag("report_solution.png", :alt => "report", :class => "img-report") %>
+          </div>
+        </div>
+
+        <!-- TEAMUP 360 SOLUTION-->
+        <div class="row margin-top-50">
+          <div class="col-12 col-xl-6 margin-top-50" id="home-sol-img-right">
+            <%= image_tag("report_solution.png", :alt => "report", :class => "img-report") %>
+          </div>
+          <div class="col-12 col-xl-6 margin-top-50">
+            <p class="subtitles-grey"><strong>Develop leaders</strong></p>
+            <h2 class="title-color-green">teamup∞™ 360</h2>
+            <p>The teamup∞™ 360 is the same as the teamup∞™ 180, apart from that it goes one step further and allows the perspective and feedback to be collected from an additional group of people.</p>
+            <p>Depending on which group will bring the most powerful input, you can choose between peers, stakeholders, or even customers. With three different perspectives to compliment your own self-assessment, the development opportunity provided by the teamup∞™ 360 is our most significant for the individual leader yet.</p>
+            <div class="margin-top-50">
+              <%= link_to "teamup∞™ 360 sample report", root_path, class: "btn-green"%>
+            </div>
+          </div>
+        </div>
+
+        <!-- TEAMUP FOR TEAM -->
+        <div class="row margin-top-50">
+          <div class="col-12 col-xl-6 margin-top-50">
+            <p class="subtitles-grey"><strong>Develop teams</strong></p>
+            <h2 class="title-color-green">teamup for team</h2>
+            <p>When teams function optimally, the entire organization benefits because our efforts and impact are amplified. The teamup∞™ for teams assessment offers comprehensive, evidence-based feedback for where your team’s greatest strengths & development areas are for driving high performance.</p>
+            <p>It gathers feedback from each team member (including yourself) and offers developmental advice in each dimension, as well as practical suggestions on how to take your team performance to the next level.</p>
+            <div class="margin-top-50">
+              <%= link_to "teamup∞™ for team sample report", root_path, class: "btn-green"%>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 home-sol-img-left">
+            <%= image_tag("report_solution.png", :alt => "report", :class => "img-report") %>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+
+
+
+
