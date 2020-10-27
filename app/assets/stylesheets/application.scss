@@ -3,15 +3,16 @@
 
 // Graphical variables
 // @import "config/fonts";
-// @import "config/colors";
+@import "config/colors";
 
 // CSS pages
-// @import "pages/home";
+@import "pages/home";
 
 // CSS components
 @import "components/banner";
+@import "components/images";
+@import "components/btn";
 // @import "components/navbar";
 // @import "components/footer";
 // @import "components/mediaq";
 // @import "components/icons";
-// @import "components/btn";

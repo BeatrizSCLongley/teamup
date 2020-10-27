@@ -1,0 +1,21 @@
+// Color variables:
+// How to use it: background-color: var(--teamupBlue);
+:root {
+  --teamupBlue: rgb(35, 157, 204);
+  --teamupGreen: rgb(134, 188, 37);
+  --teamupPurple: rgb(130, 54, 140);
+  --teamupPink: rgb(230, 0, 126);
+  --teamupOrange: rgb(232, 78, 16);
+  --teamupYellow: rgb(248, 167, 2);
+  --teamupGrey: rgb(103, 103, 103);
+}
+
+// Color of text
+.subtitles-grey {
+  color: var(--teamupGrey);
+}
+
+// Color of background - shade of white
+body {
+  background-color: rgb(252, 252, 252);
+}

@@ -1,0 +1,128 @@
+// HOME - BANNER
+#home-banner-container {
+  width: 667px;
+  margin-left: 46px; // overrides container & positions it in the right place
+}
+
+#home-banner-text {
+  padding: 20px 0px 0px 18px;
+  margin-bottom: 54px;
+
+  h2 {
+    color: var(--teamupBlue);
+    margin-bottom: 30px;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// HOME - INTRO
+.home-text-right { // GENERAL
+  text-align: right;
+  padding-top: 48px;
+}
+
+#title-color-pink { // h2
+  color: var(--teamupPink);
+  margin-bottom: 30px;
+}
+
+#home-intro-pic {
+  height: 600px;
+}
+
+.divider {
+  height: 100px; // to create an 'invisible' divider in between content
+}
+
+// -----------------------------------------------------------------------------
+// HOME - QUOTE
+.home-text-middle { // GENERAL
+  text-align: center;
+}
+
+#quote {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--teamupPink);
+}
+
+#quote-author {
+  font-size: 20px;
+  color: var(--teamupGrey)
+}
+
+// -----------------------------------------------------------------------------
+// HOME - HOW IT WORKS
+#home-how {
+  text-align: justify;
+
+  h2 {
+    color: var(--teamupPurple);
+    margin-bottom: 30px;
+  }
+}
+
+#home-how-img {
+  background-color: white; // So that you don't see the white - temp solution until animation is ready
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#home-how-color {
+  background-image: linear-gradient(rgb(252, 252, 252), rgb(255, 255, 255)); // temporary solution to the color
+}
+
+// -----------------------------------------------------------------------------
+// HOME - SOLUTIONS
+// background image
+#home-solutions {
+  height: 1000px;
+  position: relative; // parent needs to be relative
+
+  // pseudo-element
+  &::before {
+    content: ''; // so the img shows up
+    background-image: url(background_one.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    position: absolute; // make it the same size as the parent
+    top: 0px; // these 4 properties make it so the img doesn't colapse
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+// ---------------------------
+// Section title
+#home-solutions-content {
+  position: relative; // the child elements also need to be relative to be 'on top'
+}
+
+#home-solutions-title {
+  text-align: center;
+  padding-top: 82px;
+
+  h2 {
+    color: var(--teamupGreen);
+    margin-bottom: 30px;
+  }
+}
+
+// ---------------------------
+// neuro-selfie
+#home-sol-neuroselfie {
+  margin: 90px 0px 60px 0px;
+}
+
+#title-color-blue {
+  color: var(--teamupBlue);
+  margin-bottom: 30px;
+}
+
+#home-solutions-img {
+  display: flex;
+  justify-content: center;
+}

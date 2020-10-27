@@ -1,0 +1,39 @@
+// btn design
+.btn-blue {
+  color: var(--teamupBlue);
+  font-weight: bold;
+  padding: 10px 46px;
+  border: 4px solid var(--teamupBlue);
+  border-radius: 34px;
+}
+
+.btn-blue:hover {
+  color: white;
+  background-color: var(--teamupBlue);
+  text-decoration: none;
+}
+
+.btn-pink {
+  color: var(--teamupPink);
+  font-weight: bold;
+  padding: 10px 96px;
+  border: 4px solid var(--teamupPink);
+  border-radius: 34px;
+}
+
+.btn-pink:hover {
+  color: white;
+  background-color: var(--teamupPink);
+  text-decoration: none;
+}
+
+// Home
+#home-banner-btn {
+  margin: 15px;
+}
+
+.home-btn-middle {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
