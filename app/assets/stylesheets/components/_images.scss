@@ -19,12 +19,23 @@
   height: 380px;
 }
 
+// HOME - img solutions
 #img-report-ns {
-  height: 300px;
-  width: 300px;
+  height: 313px;
+  width: 225px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+#img-report-ns:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .img-report {
   height: 313px;
   width: 225px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.img-report:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
