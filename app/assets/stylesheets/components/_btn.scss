@@ -30,7 +30,7 @@
 .btn-green {
   color: var(--teamupGreen);
   font-weight: bold;
-  padding: 10px 45px;
+  padding: 10px 40px;
   border: 4px solid var(--teamupGreen);
   border-radius: 34px;
 }
@@ -38,6 +38,20 @@
 .btn-green:hover {
   color: white;
   background-color: var(--teamupGreen);
+  text-decoration: none;
+}
+
+.btn-orange {
+  color: var(--teamupOrange);
+  font-weight: bold;
+  padding: 10px 96px;
+  border: 4px solid var(--teamupOrange);
+  border-radius: 34px;
+}
+
+.btn-orange:hover {
+  color: white;
+  background-color: var(--teamupOrange);
   text-decoration: none;
 }
 
