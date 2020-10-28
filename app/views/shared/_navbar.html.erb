@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm fixed-top navbar-light">
+  <div id="nav-logo" class="navbar-brand">
+    <%= link_to root_path do %>
+      <%= image_tag('logo.png', height: '50', width: '120')%>
+    <% end %>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto" id="nav-icons-position">
+      <li class="nav-item active">
+        <%= link_to "About", root_path, id: "btn-navbar-about", class: "btn-navbar-size" %><span class="sr-only">(current)</span>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact", root_path, id: "btn-navbar-contact", class: "btn-navbar-size" %>
+      </li>
+    </ul>
+  </div>
+</nav>
