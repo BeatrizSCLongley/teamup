@@ -17,3 +17,4 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import "../stylesheets/application"
