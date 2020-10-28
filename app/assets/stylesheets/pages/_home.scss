@@ -94,7 +94,6 @@
     bottom: 0px;
   }
 }
-
 // ---------------------------
 // Section title
 #home-solutions-content {
@@ -110,7 +109,6 @@
     margin-bottom: 30px;
   }
 }
-
 // ---------------------------
 // neuro-selfie
 #home-sol-neuroselfie {
@@ -126,7 +124,6 @@
   display: flex;
   justify-content: flex-start;
 }
-
 // ---------------------------
 // solutions grey section
 #home-solutions-gray {
@@ -151,13 +148,39 @@
   justify-content: flex-end; // or center depending on taste + make it disappear in smaller screen
   margin-top: 59px;
 }
-
 // right solution
 #home-sol-img-right {
   display: flex;
   justify-content: flex-start; // or center depending on taste + make it disappear in smaller screen
   margin-top: 59px;
 }
+// ----------------------------
+// solutions workshop
+#home-workshop {
+  height: 800px;
+  position: relative; // parent needs to be relative
 
+  // pseudo-element
+  &::before {
+    content: ''; // so the img shows up
+    background-image: url(background_two.jpg);
+    background-repeat: no-repeat;
+    // background-size: cover;
+    opacity: 0.1;
+    position: absolute; // make it the same size as the parent
+    top: 0px; // these 4 properties make it so the img doesn't colapse
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+  }
+}
 
+#home-workshop-content {
+  position: relative;
+  padding-top: 140px;
+}
 
+.title-color-orange {
+  color: var(--teamupOrange);
+  margin-bottom: 30px;
+}
