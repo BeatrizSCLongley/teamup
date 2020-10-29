@@ -7,7 +7,7 @@
         <p>We believe that leaders and teams can always get better. Striving for better is both healthy and something you can habituate.</p>
         <p>So teamup∞™ offer a range of solutions built on neuroscience designed to accelerate individual and team performance.</p>
       </div>
-      <%= link_to "our solutions", root_path, class: "btn-blue", id: "home-banner-btn" %>
+      <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions"), class: "btn-blue", id: "home-banner-btn" %>
     </div>
   </div>
 </div>
@@ -71,9 +71,32 @@
       <div class="home-text-middle">
         <p class="subtitles-grey"><strong>Click here to book your neuro-selfie™, and start your journey towards becoming a better individual and team leader</strong></p>
       </div>
+      <!-- MODAL -->
       <div class="home-btn-middle">
-        <%= link_to "book your neuro-selfie™", root_path, class: "btn-blue"%>
+        <button type="button" class="btn-blue" data-toggle="modal" data-target="#neuroselfieModal">
+          book your neuro-selfie™
+        </button>
       </div>
+
+      <div class="modal fade" id="neuroselfieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact form</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <%= render 'shared/form' %>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="btn-blue-form">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div id="home-solutions-gray">
