@@ -13,6 +13,17 @@
 @import "components/images";
 @import "components/btn";
 @import "components/navbar";
-// @import "components/footer";
-// @import "components/mediaq";
-// @import "components/icons";
+@import "components/footer";
+
+
+// General css
+// MEDIA QUERY
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

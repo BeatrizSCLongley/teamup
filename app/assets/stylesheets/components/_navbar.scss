@@ -46,7 +46,7 @@
   }
 }
 
-// // MEDIA QUERY
+// MEDIA QUERY
 // Small screen
 @media only screen and (max-width: 700px) {
   #nav-icons-position {
@@ -66,7 +66,12 @@
   }
 
   #navbar-logo {
-  height: 36px;
-  width: 89px;
+    height: 36px;
+    width: 89px;
+  }
 }
+
+// ---------------
+.hidden {
+  display: none;
 }
