@@ -15,9 +15,16 @@ footer {
 
   li {
     list-style: none;
+    color: var(--teamupGrey);
   }
 }
 
 #footer-address {
-  color: var(--teamupGrey)
+  color: var(--teamupGrey);
+}
+
+#footer-designer {
+  font-size: 10px;
+  text-align: center;
+  color: var(--teamupGrey);
 }
