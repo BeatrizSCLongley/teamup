@@ -1,34 +1,23 @@
-#footer {
+footer {
   position: relative;
-  background-color: rgb(244, 244, 244);
-  height: 150px;
-  box-shadow: 0 4px 14px 0 rgba(0,0,0,0.2);
-  padding: 25px;
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  // box-shadow: 0 4px 14px 0 rgba(0,0,0,0.2);
+  .container {
+    margin-left: 123px;
+  }
 }
 
-// .footer-spacing {
-//   padding-right: 2.5rem;
-// }
+#footer-padding {
+  padding-top: 84px;
+  text-align: center;
 
-// .col-3 {
-//   max-width: 42%;
-// }
+  li {
+    list-style: none;
+  }
+}
 
-// .social-media {
-//   position: relative;
-//   top: 2px;
-//   right: -597px;
-// }
-
-// .color-grey {
-//   color: rgb(84, 84, 84);
-// }
-
-// .footer-absolute {
-//   position: absolute;
-// }
-
-
-// .padding {
-//   padding-top: 50px;
-// }
+#footer-address {
+  color: var(--teamupGrey)
+}
