@@ -41,7 +41,7 @@
 
 // MEDIA QUERY
 // Small screen
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
   // resize logo on banner
   #img-banner-logo {
     height: 81px;
@@ -50,7 +50,7 @@
 
   // resize intro pic
   #home-intro-pic {
-    height: 388px;
+    height: 410px;
   }
 
   // dissapear the images of the solutions
@@ -64,5 +64,13 @@
 
   #home-neuroselfie-img {
     display: none;
+  }
+}
+
+// Medium screen
+@media only screen and (max-width: 991px) {
+  // resize intro pic
+  #home-intro-pic {
+    height: 445px;
   }
 }
