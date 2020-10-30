@@ -184,3 +184,19 @@
   color: var(--teamupOrange);
   margin-bottom: 30px;
 }
+
+// MEDIA QUERY
+// Medium screen
+@media only screen and (max-width: 991px) {
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 1602px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  // resize workshop area
+  #home-workshop {
+    height: 608px;
+  }
+}
