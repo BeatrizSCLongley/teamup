@@ -171,18 +171,22 @@
     <footer>
       <div class="container" id="footer-padding">
         <div class="row">
-          <div class="col-12 col-xl-3">
-            <%= link_to "Home", root_path, class: "footer-home"%>
+          <div class="col-12 col-xl-4">
+            <ul>
+              <li><%= link_to "Home", root_path, class: "footer-home"%></li>
+              <li><%= link_to "About", root_path, class: "footer-about"%></li>
+            </ul>
           </div>
-          <div class="col-12 col-xl-3">
-            <%= link_to "About", root_path, class: "footer-about"%>
+          <div class="col-12 col-xl-4">
+            <ul>
+              <li><%= link_to "Privacy Policy", root_path, class: "footer-priv-policy"%></li>
+            </ul>
           </div>
-          <div class="col-12 col-xl-3">
-            <%= link_to "Privacy Policy", root_path, class: "footer-priv-policy"%>
-          </div>
-          <div class="col-12 col-xl-3" id="footer-address">
-           <p><strong>teamup.inc</strong></p>
-           <p>address placeholder</p>
+          <div class="col-12 col-xl-4" id="footer-address">
+            <ul>
+              <li><strong>teamup.inc</strong></li>
+              <li>address placeholder</li>
+            </ul>
           </div>
         </div>
         <div class="row" id="footer-designer">
