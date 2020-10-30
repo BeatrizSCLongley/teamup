@@ -1,29 +1,32 @@
 footer {
   position: relative;
-  height: 200px;
+  height: 100px;
   width: 100%;
   background-color: white;
+  color: var(--teamupGrey);
   // box-shadow: 0 4px 14px 0 rgba(0,0,0,0.2);
-  .container {
-    margin-left: 123px;
+
+  a {
+    text-decoration: none;
+    color: var(--teamupGrey);
+
+    &:hover {
+      text-decoration: none;
+       color: var(--teamupBlue);
+    }
   }
 }
 
 #footer-padding {
-  padding-top: 84px;
-
-  li {
-    list-style: none;
-    color: var(--teamupGrey);
-  }
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
-#footer-address {
-  color: var(--teamupGrey);
-}
-
+// -----------------------------------------
 #footer-designer {
   font-size: 10px;
-  text-align: center;
   color: var(--teamupGrey);
+  display: flex;
+  justify-content: center;
 }

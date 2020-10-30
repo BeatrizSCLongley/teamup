@@ -171,25 +171,13 @@
     <footer>
       <div class="container" id="footer-padding">
         <div class="row">
-          <div class="col-12 col-xl-4">
-            <ul>
-              <li><%= link_to "Home", root_path, class: "footer-home"%></li>
-              <li><%= link_to "About", root_path, class: "footer-about"%></li>
-            </ul>
-          </div>
-          <div class="col-12 col-xl-4">
-            <ul>
-              <li><%= link_to "Privacy Policy", root_path, class: "footer-priv-policy"%></li>
-            </ul>
-          </div>
-          <div class="col-12 col-xl-4" id="footer-address">
-            <ul>
-              <li><strong>teamup.inc</strong></li>
-              <li>address placeholder</li>
-            </ul>
+          <div class="col">
+            <p><strong>teamup.inc - address placeholder</strong> | <%= link_to "Home", root_path, class: "footer-home"%> | <%= link_to "About", root_path, class: "footer-about"%> | <%= link_to "Privacy Policy", root_path, class: "footer-priv-policy"%></p>
           </div>
         </div>
-        <div class="row" id="footer-designer">
+      </div>
+      <div class="container" id="footer-designer">
+        <div class="row">
           <p>Designed by: Beatriz S.C. Longley</p>
         </div>
       </div>
