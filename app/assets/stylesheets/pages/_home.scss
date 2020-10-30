@@ -157,7 +157,7 @@
 // ----------------------------
 // solutions workshop
 #home-workshop {
-  height: 765px;
+  height: 605px;
   position: relative; // parent needs to be relative
 
   // pseudo-element
@@ -177,10 +177,33 @@
 
 #home-workshop-content {
   position: relative;
-  padding-top: 117px;
+  padding-top: 65px;
 }
 
 .title-color-orange {
   color: var(--teamupOrange);
   margin-bottom: 30px;
+}
+
+// MEDIA QUERY -----------------------------------------------------------------
+// Small screen
+@media only screen and (max-width: 767px) {
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 1402px;
+  }
+}
+// Medium screen
+@media only screen and (min-width: 768px) {
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 1602px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  // incease size of grey area
+  #home-solutions-gray {
+    height: 1476px;
+  }
 }
