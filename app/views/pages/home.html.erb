@@ -1,14 +1,18 @@
 <div id="home-banner">
-  <%= video_tag "lined_head_silhouette.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :class => "banner-video-head"%>
-  <div class="container" id="home-banner-container">
-    <div class="col-10 col-xl-12">
-      <%= image_tag("logo.png", :alt => "logo", :id => "img-banner-logo") %>
-      <div id="home-banner-text">
-        <h2>Creating high performing teams</h2>
-        <p>We believe that leaders and teams can always get better. Striving for better is both healthy and something you can habituate.</p>
-        <p>So teamup∞™ offer a range of solutions built on neuroscience designed to accelerate individual and team performance.</p>
+  <div class="container">
+    <div class="row" id="home-banner-container">
+      <div class="col-5 col-xl-5">
+        <%= image_tag("logo.png", :alt => "logo", :id => "img-banner-logo") %>
+        <div id="home-banner-text">
+          <h2>Creating high performing teams</h2>
+          <p>We believe that leaders and teams can always get better. Striving for better is both healthy and something you can habituate.</p>
+          <p>So teamup∞™ offer a range of solutions built on neuroscience designed to accelerate individual and team performance.</p>
+        </div>
+        <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions"), id: "home-banner-btn" %>
       </div>
-      <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions"), class: "btn-blue", id: "home-banner-btn" %>
+      <div class="col-7 col-xl-7">
+        <%= video_tag "lined_head_silhouette.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :height => '100%', :width => "100%", :id => "banner-video-head"%>
+      </div>
     </div>
   </div>
 </div>
