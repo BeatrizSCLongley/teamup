@@ -11,7 +11,18 @@
         <p>Please share your contact details bellow, and chose a topic so we can get back to you with the relevant information.</p>
         <p>Feel free to leave ny additional comments or questions you would like to ask.</p>
       </div>
-      <form id="contact-form">
+      <div id="contact-form">
+        <%= simple_form_for @contact do |f| %>
+          <%= f.input :name, label: 'Your first and last name please', error: 'Name is mandatory' %>
+          <%= f.input :email, placeholder: 'user@domain.com' %>
+          <%= f.input :title %>
+          <%= f.input :message, as: :text %>
+          <%= f.submit "Send", class: "btn-yellow" %>
+        <% end %>
+      </div>
+
+
+      <!-- <form id="contact-form">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
@@ -30,9 +41,9 @@
           <label class="form-check-label" for="acceptTermConditions">Agree to terms and conditions</label>
         </div>
         <div class="margin-top-50">
-          <%= link_to "Send", root_path, class: "btn-yellow"%>
+          <%#= link_to "Send", root_path, class: "btn-yellow"%>
         </div>
-      </form>
+      </form> -->
     </div>
   </div>
 </div>
