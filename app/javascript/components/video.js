@@ -1,11 +1,10 @@
 // Not working at the moment
-const startAnimationInView = () => {
-  const video = document.querySelector('video');
-  if (video) {
-    window.addEventListener('scroll', () => {
-      this.[0].play();
-    });
-  }
-}
+// const startAnimationInView = () => {
+//   const video = document.querySelectorAll('video');
+//   console.log(video);
+//   video.addEventListener(EVENTTYPE, (event) => {
+//     console.log(video.currentTarget);
+//   });
+// }
 
-export { startAnimationInView };
+// export { startAnimationInView };

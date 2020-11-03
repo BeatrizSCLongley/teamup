@@ -6,14 +6,13 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
 
-    if @contact.valid?
-      @contact.save
-      ContactMailer.send(@contact).deliver_now
-      redirect_to contact_path
-      flash[:notice] = "We have received your contact form and will be in touch soon!"
+    if @contact.save
+      message = ContactMailer.with(contact: @contact).new_contact
+      message.deliver_now
+      redirect_to contact_path, notice: "We have received your contact form and will be in touch soon!"
+      # flash[:notice] = "We have received your contact form and will be in touch soon!"
     else
-      flash[:notice] = "There was an error sending your contact form. Please try again."
-      render :new
+      render :new, notice: "There was an error sending your contact form. Please try again."
     end
   end
 
