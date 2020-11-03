@@ -2,7 +2,13 @@
 
 </div>
 
+
 <div class="container" id="contact-container">
+  <% flash.each do |type, msg| %>
+    <div class="alert alert-info">
+      <%= msg %>
+    </div>
+  <% end %>
   <div class="row">
     <div class="col">
       <h2 class="margin-top-50">Contact form</h2>

@@ -1,8 +1,12 @@
-<p>Hello <%= @contact.name %>,</p>
+<style>
+  p {
+    font-family: sans-serif;
+  }
+</style>
 
-<p>Thank you for your contact and interesse in finding out more about our solution <%= @contact.title %></p>
+<p>Dear <%= @contact.name %>,</p>
 
-<p>Please, find on the attached link a copy of our report.</p>
+<p>Thank you for your contact and interesse in finding out more about our <strong><%= @contact.title %></strong> solution.</p>
 
 <p>We will soon send a follow up email to potentialy schehule a call in case you have any further questions.</p>
 
