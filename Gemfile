@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+source 'http://rubygems.org'
+git_source(:github) { |repo| "http://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
@@ -31,6 +31,12 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Simple Form
 gem 'simple_form'
 
+# Recaptcha
+# gem 'recaptcha', require: 'recaptcha/rails'
+
+# Postmark
+# gem 'postmark-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -54,4 +60,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
