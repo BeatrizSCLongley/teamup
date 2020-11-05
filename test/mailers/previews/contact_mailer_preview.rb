@@ -4,4 +4,19 @@ class ContactMailerPreview < ActionMailer::Preview
     contact = Contact.first
     ContactMailer.with(contact: contact).new_contact
   end
+
+  def teamup_180
+    contact = Contact.first
+    ContactMailer.with(contact: contact).teamup_180
+  end
+
+  def teamup_360
+    contact = Contact.last
+    ContactMailer.with(contact: contact).teamup_360
+  end
+
+  def teamup_teams
+    contact = Contact.first
+    ContactMailer.with(contact: contact).teamup_teams
+  end
 end

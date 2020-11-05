@@ -19,9 +19,9 @@
       </div>
       <div id="contact-form">
         <%= simple_form_for(@contact) do |f| %>
-          <%= f.input :name, label: 'Your first and last name please', error: 'Name is mandatory' %>
+          <%= f.input :name, label: 'Your first and last name please',  placeholder: 'Jon Doe', error: 'Name is mandatory' %>
           <%= f.input :email, placeholder: 'user@domain.com' %>
-          <%= f.input :title, required: true, collection: ["General", "neuro-selfie™", "teamup∞™ 180", "teamup∞™ 360", "teamup∞™ for teams"] %>
+          <%= f.input :title, collection: ["General", "neuro-selfie™", "teamup∞™ 180", "teamup∞™ 360", "teamup∞™ for teams", "Workshop series"] %>
           <%= f.input :message, as: :text %>
           <%= recaptcha_tags %>
           <%= f.submit "Send", class: "btn-yellow" %>
