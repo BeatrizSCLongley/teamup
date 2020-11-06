@@ -17,6 +17,11 @@
 @import "components/footer";
 @import "components/flash";
 
+
+body {
+  font-family: "Avenir Next";
+}
+
 // General css
 // MEDIA QUERY
 @media only screen and (max-width: 1198px) {
