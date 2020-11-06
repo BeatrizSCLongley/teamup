@@ -5,10 +5,9 @@
         <%= image_tag("logo.png", :alt => "logo", :id => "img-banner-logo") %>
         <div id="home-banner-text">
           <h2>Creating high performing teams</h2>
-          <p>We believe that leaders and teams can always get better. Striving for better is both healthy and something you can habituate.</p>
-          <p>So teamup∞™ offer a range of solutions built on neuroscience designed to accelerate individual and team performance.</p>
+          <p class="justify-text">We believe that leaders and teams can always get better. Better Teams. Better Times. Striving for better is both healthy and something you can habituate.</p>
+          <p class="justify-text">So teamup∞™ offers a range of solutions built on neuroscience designed to accelerate individual and team performance.</p>
         </div>
-        <!-- NEED TO CHANGE THE PATH -->
         <%= link_to "our solutions", root_path(@root, :anchor => "home-solutions"), id: "home-banner-btn" %>
       </div>
       <div class="col-7 col-xl-7">
@@ -26,14 +25,12 @@
     <div class="col-12 col-md-6 col-lg-6 col-xl-6 home-text-right">
       <p class="subtitles-grey"><strong>teamup∞™ are proprietary neuroscience-based assessments</strong></p>
       <h2 id="title-color-pink">Based on neuroscience</h2>
-      <p>The teamup∞™ model for high performing teams is based exclusively on application of the latest published neuroscience towards collaboration and collective intelligence.</p>
-      <p>Workplaces are social systems, filled with people. Each and everyone of those people possesses a brain capable of amazing complexity, and more learning and adaptation than previously ever thought possible. Yet every one of those brains is wired to be beautifully and predictably biased, energy conserving, meaning making and risk avoiding. So it’s essential that we use this growing knowledge to create an environment where teams can flourish.</p>
-      <p>We know that high performing teams give organizations a huge competitive advantage. However, these teams seldom perform to their collective potential. This is because most of the models of team effectiveness focus on competencies or experience, and ignore the science. This is where teamup∞™ is different...because we lead with neuroscience.</p>
+      <p class="justify-text">The teamup∞™ model for high performing teams is based exclusively on application of the latest neuroscience towards collaboration and collective intelligence. Workplaces are social systems, filled with people. Each and every brain is wired to be beautifully and predictably biased, energy conserving, meaning making and risk avoiding.</p>
+      <p class="justify-text">So it’s essential that we use this growing knowledge to better enable teams to flourish. This is where teamup∞™ is different, because we lead with neuroscience.</p>
     </div>
   </div>
   <div class="home-btn-middle">
-    <!-- NEED TO CHANGE THE PATH -->
-    <%= link_to "the science", root_path, class: "btn-pink"%>
+    <%= link_to "the science", "https://drive.google.com/file/d/1SN-c73-kVXU0CGZYfPFST0_RcCsVWxWU/view", target: :_blank, class: "btn-pink"%>
   </div>
   <div class="divider"></div>
   <div class="home-text-middle">
@@ -42,15 +39,14 @@
   </div>
 </div>
 
-<div class="divider"></div>
+<div class="divider_two"></div>
 
 <!-- Temporary solution to background color div home-how-color -->
 <div id="home-how-color">
   <div class="container" id="home-how">
     <h2>How it works</h2>
-    <p>The teamup∞™ model for high performing teams suggests there are 6 ongoing leadership roles needed to build a high performing team. The model is an infinity loop to represent both the sequential and ongoing responsibility of leaders to create an effective team.</p>
-    <p>Our assessments help you to hone in on which of the 6 roles you do well, which you could improve upon, and what are some practical suggestions you can apply to your work today.</p>
-    <p>For those with a thirst for knowledge, we also provide specific information on how you’re doing on the 15 steps which sit at the heart of teamup∞™.</p>
+    <p>teamup∞™ suggests there are six ongoing leadership roles needed to build a high performing team. The model is an infinity loop to represent both the sequential and ongoing responsibility of leaders to create an effective team.</p>
+    <p>Our assessments help you to hone in on which of the six roles you do well, which you could improve upon, along with practical suggestions you can apply to your work today.</p>
     <div id="home-how-img">
       <%#= image_tag("infinity_loop.jpg", :alt => "infinity loop model", :id => "img-infinity-loop") %>
       <%= video_tag "loop_v2.mp4", :type => "video/mp4", autoplay: :autoplay, preload: 'auto', muted: :muted, :height => '426px', :width => "660px", :id => "home-video-loop"%>
@@ -59,21 +55,21 @@
 </div>
 
 <div id="home-solutions">
-  <div id="home-solutions-content">
-    <div class="container">
+  <div class="container" id="home-solutions-content">
       <div id="home-solutions-title">
         <h2>Our Solutions</h2>
         <p class="subtitles-grey"><strong>We offer different leadership and team development solutions depending on your specific needs</strong></p>
       </div>
       <!-- NEUROSELFIE -->
       <div class="row" id="home-sol-neuroselfie">
-        <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="home-neuroselfie-img">
+        <div class="col-12 col-md-5 col-lg-5 col-xl-5" id="home-neuroselfie-img">
           <%= image_tag("report_ns.jpg", :alt => "neuro selfie report", :id => "img-report-ns") %>
         </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-6 home-text-right">
+        <div class="col-12 col-md-7 col-lg-7 col-xl-7" id="home-ns-text-right">
           <p class="subtitles-grey"><strong>Start with the individual</strong></p>
           <h2 id="title-color-blue">neuro-selfie™</h2>
-          <p>The neuro-selfie™ is a one page snapshot based on the latest neuroscience, for where your strengths and weaknesses lie in leading a team to high performance. It takes just a couple of minutes to complete and is a quick yet impactful self-report assessment which will lead to a greater understanding of which actions you can take to become an even stronger team leader.</p>
+          <p class="justify-text">The neuro-selfie™ is a one page snapshot based on the latest neuroscience, for where your strengths and weaknesses lie in leading a team to high performance.</p>
+          <p class="justify-text">It takes just a couple of minutes to complete and is a quick yet impactful self-report assessment which will lead to a greater understanding of which actions you can take to become an even stronger team leader.</p>
         </div>
       </div>
       <div class="home-text-middle">
@@ -82,116 +78,25 @@
       <div class="home-btn-middle margin-top-50">
         <%= link_to "book your neuro-selfie™", contact_path, class: "btn-blue"%>
       </div>
-      <!-- MODAL -->
-    <!--   <div class="home-btn-middle">
-        <button type="button" class="btn-blue" data-toggle="modal" data-target="#neuroselfieModal">
-          book your neuro-selfie™
-        </button>
+  </div>
+</div>
+
+<div id="home-solutions-gray">
+  <div class="container">
+    <!-- TEAMUP 180° SOLUTION -->
+    <div class="row">
+      <div class="col-12 col-md-7 col-lg-7 col-xl-7 margin-top-50 ">
+        <p class="subtitles-grey"><strong>Develop leaders</strong></p>
+        <h2 class="title-color-green">teamup∞™ 180°</h2>
+        <p class="justify-text">Based on the teamup∞™ model for high performing teams, the teamup∞™ 180° assessment offers comprehensive, evidence-based feedback for where your greatest strengths/development areas are for driving high performance with your team.  It gathers self, team and line manager feedback and offers developmental advice in each dimension.</p>
+        <p class="justify-text">The report includes the latest neuroscience behind each of the six roles, and also provides the barriers to effectiveness which you are demonstrating as an additional platform for your growth.</p>
+        <div class="margin-top-50">
+          <%= link_to "teamup∞™ 180° sample report", contact_path, class: "btn-green"%>
+        </div>
       </div>
-
-      <div class="modal fade" id="neuroselfieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Contact form</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>To book your neuroselfie simply leave your details bellow and we will get back to you soon.</p>
-              <%#= render 'shared/form_neuroselfie' %>
-            </div>
-            <div class="modal-footer">
-              <button type="button" id="btn-blue-form">Send</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    </div>
-
-    <div id="home-solutions-gray">
-      <div class="container">
-        <!-- TEAMUP 180 SOLUTION -->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-6 col-xl-6 margin-top-50 ">
-            <p class="subtitles-grey"><strong>Develop leaders</strong></p>
-            <h2 class="title-color-green">teamup∞™ 180</h2>
-            <p>Based on the teamup∞™ model for high performing teams, the teamup∞™ 180 assessment offers comprehensive, evidence-based feedback for where your greatest strengths/development areas are for driving high performance with your team.</p>
-            <p>It gathers self, team and line manager feedback and offers developmental advice in each dimension. The report includes the latest neuroscience behind each of the 6 roles, and also provides the barriers to effectiveness which you are demonstrating as an additional platform for your growth.</p>
-            <div class="margin-top-50">
-              <%= link_to "teamup∞™ 180 sample report", contact_path, class: "btn-green"%>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-6 col-xl-6 home-sol-img-left image-hide">
-            <%= image_tag("report_five.jpg", :alt => "report", :class => "img-report") %>
-          </div>
-        </div>
-
-        <!-- TEAMUP 360 SOLUTION-->
-        <div class="row margin-top-50">
-          <div class="col-12 col-md-6 col-lg-6 col-xl-6 margin-top-50" id="home-sol-img-right">
-            <%= image_tag("report_seven.jpg", :alt => "report", :class => "img-report") %>
-          </div>
-          <div class="col-12 col-md-6 col-lg-6 col-xl-6 margin-top-50">
-            <p class="subtitles-grey"><strong>Develop leaders</strong></p>
-            <h2 class="title-color-green">teamup∞™ 360</h2>
-            <p>The teamup∞™ 360 is the same as the teamup∞™ 180, apart from that it goes one step further and allows the perspective and feedback to be collected from an additional group of people.</p>
-            <p>Depending on which group will bring the most powerful input, you can choose between peers, stakeholders, or even customers. With three different perspectives to compliment your own self-assessment, the development opportunity provided by the teamup∞™ 360 is our most significant for the individual leader yet.</p>
-            <div class="margin-top-50">
-              <%= link_to "teamup∞™ 360 sample report", contact_path, class: "btn-green"%>
-            </div>
-          </div>
-        </div>
-
-        <!-- TEAMUP FOR TEAMS -->
-        <div class="row margin-top-50">
-          <div class="col-12 col-md-6 col-lg-6 col-xl-6 margin-top-50">
-            <p class="subtitles-grey"><strong>Develop teams</strong></p>
-            <h2 class="title-color-green">teamup∞™ for teams</h2>
-            <p>When teams function optimally, the entire organization benefits because our efforts and impact are amplified. The teamup∞™ for teams assessment offers comprehensive, evidence-based feedback for where your team’s greatest strengths & development areas are for driving high performance.</p>
-            <p>It gathers feedback from each team member (including yourself) and offers developmental advice in each dimension, as well as practical suggestions on how to take your team performance to the next level.</p>
-            <div class="margin-top-50">
-              <%= link_to "teamup∞™ for teams sample report", contact_path, id: "btn-teams" %>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-6 col-xl-6 home-sol-img-left image-hide">
-            <%= image_tag("report_two.jpg", :alt => "report", :class => "img-report") %>
-          </div>
-        </div>
+      <div class="col-12 col-md-5 col-lg-5 col-xl-5 home-sol-img-left image-hide">
+        <%= image_tag("report_180.jpg", :alt => "report", :class => "img-report") %>
       </div>
     </div>
-
-    <!-- WORKSHOP -->
-    <div class="container" id="home-workshop">
-      <div class="row" id="home-workshop-content">
-        <div class="col-12 col-xl-6">
-          <p class="subtitles-grey"><strong>Go beyound</strong></p>
-          <h2 class="title-color-orange">Team effectiveness workshop series</h2>
-          <p>Any one of the teamup∞™ assessments is an incredibly powerful diagnostic to better understand how to elevate your team leadership or effectiveness.</p>
-          <p>However, sometimes we need expert support to bring the action plan to life, which is where the workshop series comes in. We can design and deliver virtual or in-person workshops which can accelerate your individual or team’s growth.</p>
-          <p>These are fully customised to your needs and can be delivered across different time frames ranging from 1-time launch workshops, to facilitated 12 month team effectiveness journeys.</p>
-          <div class="margin-top-50">
-            <%= link_to "find out more", contact_path, class: "btn-orange"%>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container" id="footer-padding">
-        <div class="row">
-          <div class="col">
-            <p><strong>teamup.inc - address placeholder</strong> | <%= link_to "Home", root_path, class: "footer-home"%> | <%= link_to "About", root_path, class: "footer-about"%> | <%= link_to "Privacy Policy", root_path, class: "footer-priv-policy"%></p>
-          </div>
-        </div>
-      </div>
-      <div class="container" id="footer-designer">
-        <div class="row">
-          <p>Designed by: Beatriz S.C. Longley</p>
-        </div>
-      </div>
-    </footer>
   </div>
 </div>
