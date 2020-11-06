@@ -4,11 +4,6 @@
   padding-top: 101px;
 }
 
-#title-color-pink { // h2
-  color: var(--teamupPink);
-  margin-bottom: 30px;
-}
-
 #home-intro-pic {
   height: 473px;
 }
@@ -42,11 +37,6 @@
 // HOME - HOW IT WORKS
 #home-how {
   text-align: justify;
-
-  h2 {
-    color: var(--teamupPurple);
-    margin-bottom: 30px;
-  }
 }
 
 #home-how-img {
@@ -69,10 +59,10 @@
   // pseudo-element
   &::before {
     content: ''; // so the img shows up
-    background-image: url(background_one.jpg);
+    background-image: url(connect_background.jpg);
     background-repeat: no-repeat;
-    // background-size: cover;
-    opacity: 0.1;
+    background-size: cover;
+    opacity: 0.2;
     position: absolute; // make it the same size as the parent
     top: 0px; // these 4 properties make it so the img doesn't colapse
     right: 0px;
@@ -93,21 +83,11 @@
 #home-solutions-title {
   text-align: center;
   padding-top: 82px;
-
-  h2 {
-    color: var(--teamupGreen);
-    margin-bottom: 30px;
-  }
 }
 // ---------------------------
 // neuro-selfie
 #home-sol-neuroselfie {
   margin: 90px 0px 60px 0px;
-}
-
-#title-color-blue {
-  color: var(--teamupBlue);
-  margin-bottom: 30px;
 }
 
 #home-neuroselfie-img {
@@ -127,11 +107,6 @@
   height: 1528px;
   width: 100%;
   margin-top: 70px;
-}
-
-.title-color-green {
-  color: var(--teamupGreen);
-  margin-bottom: 30px;
 }
 
 .margin-top-50 {
@@ -165,10 +140,10 @@
   // pseudo-element
   &::before {
     content: ''; // so the img shows up
-    background-image: url(background_two.jpg);
+    background-image: url(connect_background.jpg);
     background-repeat: no-repeat;
-    // background-size: cover;
-    opacity: 0.1;
+    background-size: cover;
+    opacity: 0.2;
     position: absolute; // make it the same size as the parent
     top: 0px; // these 4 properties make it so the img doesn't colapse
     right: 0px;
@@ -180,11 +155,6 @@
 #home-workshop-content {
   position: relative;
   padding-top: 65px;
-}
-
-.title-color-orange {
-  color: var(--teamupOrange);
-  margin-bottom: 30px;
 }
 
 // MEDIA QUERY -----------------------------------------------------------------

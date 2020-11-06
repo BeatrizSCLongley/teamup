@@ -1,31 +1,37 @@
 <div id="contact-banner">
-
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="title-orange margin-top-50">Contact form</h2>
+        <div id="contact-form-intro">
+          <p>We would love to hear from you.</p>
+          <p>Please provide your contact details below, and select a topic so that we can get back to you with all of the relevant information</p>
+          <p>Feel free to leave my additional comments or questions you might have.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-
-<div class="container" id="contact-container">
-  <% flash.each do |type, msg| %>
-    <div class="alert alert-info">
-      <%= msg %>
-    </div>
-  <% end %>
-  <div class="row">
-    <div class="col">
-      <h2 class="margin-top-50">Contact form</h2>
-      <div id="contact-form-intro">
-        <p>We would like to hear from you.</p>
-        <p>Please share your contact details bellow, and chose a topic so we can get back to you with the relevant information.</p>
-        <p>Feel free to leave ny additional comments or questions you would like to ask.</p>
+<div id="contact-container">
+  <div class="container">
+    <% flash.each do |type, msg| %>
+      <div class="alert alert-info">
+        <%= msg %>
       </div>
-      <div id="contact-form">
-        <%= simple_form_for(@contact) do |f| %>
-          <%= f.input :name, label: 'Your first and last name please',  placeholder: 'Jon Doe', error: 'Name is mandatory' %>
-          <%= f.input :email, placeholder: 'user@domain.com' %>
-          <%= f.input :title, collection: ["General", "neuro-selfie™", "teamup∞™ 180", "teamup∞™ 360", "teamup∞™ for teams", "Workshop series"] %>
-          <%= f.input :message, as: :text %>
-          <%= recaptcha_tags %>
-          <%= f.submit "Send", class: "btn-yellow" %>
-        <% end %>
+    <% end %>
+    <div class="row">
+      <div class="col">
+        <div id="contact-form">
+          <%= simple_form_for(@contact) do |f| %>
+            <%= f.input :name, label: 'Your first and last name please',  placeholder: 'Jane Leader', error: 'Name is mandatory' %>
+            <%= f.input :email, placeholder: 'user@domain.com' %>
+            <%= f.input :title, required: 'required', collection: ["General", "neuro-selfie™", "teamup∞™ 180°", "teamup∞™ 360°", "teamup∞™ for teams", "Workshop series"] %>
+            <%= f.input :message, as: :text %>
+            <%= recaptcha_tags %>
+            <%= f.submit "Send", class: "btn-orange margin-top-50" %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
