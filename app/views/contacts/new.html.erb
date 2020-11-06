@@ -26,7 +26,7 @@
           <%= simple_form_for(@contact) do |f| %>
             <%= f.input :name, label: 'Your first and last name please',  placeholder: 'Jane Leader', error: 'Name is mandatory' %>
             <%= f.input :email, placeholder: 'user@domain.com' %>
-            <%= f.input :title, collection: ["General", "neuro-selfie™", "teamup∞™ 180", "teamup∞™ 360", "teamup∞™ for teams", "Workshop series"] %>
+            <%= f.input :title, required: 'required', collection: ["General", "neuro-selfie™", "teamup∞™ 180°", "teamup∞™ 360°", "teamup∞™ for teams", "Workshop series"] %>
             <%= f.input :message, as: :text %>
             <%= recaptcha_tags %>
             <%= f.submit "Send", class: "btn-orange margin-top-50" %>
