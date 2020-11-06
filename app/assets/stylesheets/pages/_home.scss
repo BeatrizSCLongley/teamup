@@ -69,10 +69,10 @@
   // pseudo-element
   &::before {
     content: ''; // so the img shows up
-    background-image: url(background_one.jpg);
+    background-image: url(connect_background.jpg);
     background-repeat: no-repeat;
-    // background-size: cover;
-    opacity: 0.1;
+    background-size: cover;
+    opacity: 0.2;
     position: absolute; // make it the same size as the parent
     top: 0px; // these 4 properties make it so the img doesn't colapse
     right: 0px;
@@ -165,10 +165,10 @@
   // pseudo-element
   &::before {
     content: ''; // so the img shows up
-    background-image: url(background_two.jpg);
+    background-image: url(connect_background.jpg);
     background-repeat: no-repeat;
-    // background-size: cover;
-    opacity: 0.1;
+    background-size: cover;
+    opacity: 0.2;
     position: absolute; // make it the same size as the parent
     top: 0px; // these 4 properties make it so the img doesn't colapse
     right: 0px;

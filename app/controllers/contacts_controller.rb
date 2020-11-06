@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     if @contact.save && verify_recaptcha(model: @contact)
-      redirect_to contact_path, notice: "We have received your contact information. You will find an email from teamup on your inbox at #{@contact.email}"
+      redirect_to contact_path, notice: "Thanks, we have received your contact information. You will receive an email from hello@teamup.inc to your #{@contact.email} account"
       # flash[:notice] = "We have received your contact form and will be in touch soon!"
       if @contact.title == "General" || @contact.title == "neuro-selfie™" || @contact.title == "Workshop series"
         message_one = ContactMailer.with(contact: @contact).new_contact

@@ -48,6 +48,7 @@
   font-weight: bold;
   padding: 10px 96px;
   border: 4px solid var(--teamupOrange);
+  background-color: rgba(252, 252, 252, 0.2); // Transparent background
   border-radius: 34px;
 
   &:hover {
@@ -57,21 +58,21 @@
   }
 }
 
-.btn-yellow {
-  margin-top: 25px;
-  color: var(--teamupYellow);
-  background-color: rgba(252, 252, 252, 0.2); // Transparent background
-  font-weight: bold;
-  padding: 10px 96px;
-  border: 4px solid var(--teamupYellow);
-  border-radius: 34px;
+// .btn-yellow {
+//   margin-top: 25px;
+//   color: var(--teamupYellow);
+//   background-color: rgba(252, 252, 252, 0.2); // Transparent background
+//   font-weight: bold;
+//   padding: 10px 96px;
+//   border: 4px solid var(--teamupYellow);
+//   border-radius: 34px;
 
-  &:hover {
-    color: white;
-    background-color: var(--teamupYellow);
-    text-decoration: none;
-  }
-}
+//   &:hover {
+//     color: white;
+//     background-color: var(--teamupYellow);
+//     text-decoration: none;
+//   }
+// }
 
 // HOME
 #home-banner-btn {
